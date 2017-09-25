@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css" />   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />   
+    <title>Survey form</title>
+</head>
+<body>
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <h1 id="title" class="title">Survey Form</h1>
+            <p id="description" class="subtitle">Let us know how we can improve freeCodeCamp</p>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <form id="survey-form">
+                <div class="field">
+                    <label id="name-label" class="label">Name</label>
+                    <div class="control  has-icons-left">
+                        <input id="name" class="input" type="text" placeholder="Text input" required />
+
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                    
+                <div class="field">
+                    <label id="email-label" class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="email" class="input" type="email" placeholder="Email input" required/>
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label id="number-label" class="label">Age</label>
+                    <div class="control">
+                        <input id="number" class="input" type="number" placeholder="Enter your age" value="" min="1" max="99" />
+                        
+                    </div>
+                </div>
+                    
+                <div class="field">
+                    <label class="label">Which option best describes your current role?</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="dropdown">
+                                <option>Select current role</option>
+                                <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Would recommend freeCodeCamp to a friend?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="question" value="1"/>
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="question" value="2"/>
+                            No
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="label">Things that should be improved in the future</label>
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" value="1"/>
+                            Back-end stuff
+                        </label>
+                    </div>
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" value="2"/>
+                            Front-end stuff
+                        </label>
+                    </div>
+                    
+                </div>
+                    
+                
+                <div class="field">
+                    <label class="label">What would you like to say to the FCC staff?</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Write your message here"></textarea>
+                    </div>
+                </div> 
+                
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button id="submit" class="button is-primary">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button id="cancel" class="button is-link">Cancel</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    
+    
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+</html>
